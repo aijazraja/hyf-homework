@@ -35,16 +35,16 @@
   }
   .contact-data
   {
-      width: 80%;
+      width: 50%;
   }
   .right-side
   {
-      width: 30%;
+      width: 50%;
   }
   #picture
   {
-       /* margin-left: 53%; */
-       float: right;
+       margin-left: 53%;
+       float: left;
    
   }
 
@@ -53,7 +53,7 @@
   {
       width: 150px;
       height: 160px;
-      /* padding-left: 400px; */
+      padding-left: 25px;
       padding-top: 15px;
 
   }
