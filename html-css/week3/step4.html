@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="logo"><p>Logo</p> </div>
+        <div class="navigation"> <p>Navigation</p> </div>
+        
+      </div>
+    <article>
+        <h1>Sign up to yourcustomtailor.com</h1>
+       
+        <h2>Step 4/4 - Payment</h2>
+    </article>
+    
+        <section class="progress-bar">
+            <label for="file">  <h3>Progress:</h3></label>
+             <progress class="progress-bar" id="file" value="90" max="100" > 90% </progress>
+
+             <p>Fill in your payment data</p>
+       </section>
+      
+    <div class="step4-form">
+        <form action="index.html">
+            <label for="cardname" id="cname"> <strong>&emsp;&emsp;&nbsp;Name on card * &emsp;&nbsp;</strong></label>
+            <input type="text" id="cardname" name="cardname" required class="input-field"> <br><br>
+            <label for="card" id="ccard"> <strong > &emsp;&emsp;&emsp;&emsp; Card Type * &emsp;</strong></label>
+                <select id="card" name="card"  class="input-field">
+                    <option value="Visa"> Visa</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="Dankort">Dankort</option>
+                </select><br><br>
+                <label for="cardno"> <strong>Credit card number *&emsp; </strong></label>
+                <input type="tel" id="cardno" name="cardno" pattern="[0-9]{16,16}" required class="input-field" placeholder="16 digits"><br><br>
+
+                 <label for="expmonth"> <strong>&emsp;&emsp;&emsp;Expiry month *&emsp; </strong></label>
+                <input type="tel" id="expmonth" name="expmonth" pattern="[0-9]{1,2}" required class="input-field1" placeholder="01"><br><br>
+                <label for="expyear" id="eyear"> <strong>&emsp;&emsp;&emsp;&emsp;Expiry year *&emsp; </strong></label>
+                <input type="tel" id="expyear" name="expyear" pattern="[0-9]{4,}" required class="input-field1" placeholder="2023" min="2020"><br><br>
+                <label for="ccv"> <strong>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;CCV *&emsp; </strong></label>
+                <input type="tel" id="ccv" name="ccv" pattern="[0-9]{3,3}" required class="input-field1"><br><br>
+           <div class="next-step">
+            <input type="submit" class="submit" value="Next Step">
+        </div>
+        </form>
+
+    </div>
+    
+    
+</body>
+</html>

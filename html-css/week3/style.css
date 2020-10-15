@@ -1,0 +1,423 @@
+
+body{
+    padding: 20px;
+    margin-bottom: 50px;
+   
+}
+.flex-container {
+    display: flex;
+   justify-content:space-between;
+   flex-wrap: wrap;
+  }
+  .logo{
+    line-height: 100px;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+    .logo p{
+        line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+
+    }
+ 
+ 
+  .navigation{
+    line-height: 100px;
+    height: 100px;
+    width: 500px;
+    border: 1px solid black;
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+
+ .navigation p{
+    line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+
+    
+  }
+  h1,h2,h3,p{
+      font-family: Arial, Helvetica, sans-serif;
+  }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 40px;
+    }
+
+h3{
+    
+        font-size: 20px;
+ }
+ #p{
+     font-size: 25px;
+     margin-left: -110px;
+ }
+.progress-bar{
+           width: 100%;
+           height: 50px;
+           border-radius: 1%;
+           
+}
+.form1{
+    width: auto;
+    
+    padding-left: 150px;
+    margin-bottom: 150px;
+   
+}
+strong{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    /* padding-left: 50px; */
+}
+.input-field{
+
+   
+    height: 40px;
+    width: 250px;
+}
+#lname{
+    padding-left: 10px;
+}
+#country{
+    padding-left: 25px;
+    widows: 150px; 
+}
+.input-adress{
+    
+    height: 40px;
+    width: 250px;
+    
+
+}
+#adress{
+  margin-left: -12px;
+ /*padding-left: -100px; */
+}
+.shipping{
+    height: 50px;
+    width: 100px;
+   vertical-align: middle;
+   border: 2px solid black;
+}
+.submit{
+font-weight: bolder;
+font-size: 30px;
+width: 230px;
+height: 80px;
+float: right;
+}
+input[type=checkbox]:checked ~ .shipping-adress {
+    display: none;
+    }
+/* #shiping:checked ~.shipping-adress{
+    position: absolute;
+	top: -9999px;
+	left: -9999px; 
+    display: none;
+
+}   */
+.profile{
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+.profile p{
+    padding-right: 20px;
+} 
+
+#pass{
+    margin-left: -20px;
+}
+#email-phone{
+    padding-left: 20px;
+}
+
+#r-pass{
+margin-left: -110px;
+}
+.news{
+   
+    display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+.products-div1{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.step3-checks{
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-right: 8
+    0px;
+}
+#Apparal{
+    margin-left: 60px;
+}
+#acces{
+    margin-right: 50px;
+    margin-left: 140px;
+}
+#Shoes{
+    margin-left: 45px;
+}
+#Handbags{
+    margin-left: 43px;
+
+}
+    #step3-right{
+        margin-left: 180px;
+}
+#imagesize{
+    width: 240px;
+    height: 240px;
+    /* margin-right: 30px; */
+}
+#image1,#image2,#image3,#image4,#image5,#image6,#image7,#image8{
+   margin-left: 10px;
+}
+.style-images{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.select{
+    margin-left: 132px;
+
+}
+.next-step{
+    margin-top: 100px;
+    margin-bottom: 250px;
+}
+.step4-form{
+    margin-left: 100px;
+    margin-top: 150px;
+}
+.input-field1{
+
+   
+    height: 40px;
+    width: 50px;
+}
+@media(max-width: 680px) {
+    body{
+        margin: 0px;;
+    }
+    .logo{
+        line-height: 80px;
+        height: 80px;
+        width: 80px;
+        border: 1px solid black;
+        background-color: #f1f1f1;
+        text-align: center;
+      }
+        .logo p{
+            line-height: 1.5;
+      display: inline-block;
+      vertical-align: middle;
+    
+        }
+     
+     
+      .navigation{
+        line-height: 80px;
+        height: 80px;
+        width: 350px;
+        border: 1px solid black;
+        background-color: #f1f1f1;
+        text-align: center;
+      }
+    
+    .flex-container{
+        margin: 0px;
+    }
+    
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 15px;
+    }
+
+h3{
+    
+        font-size: 15px;
+ }
+ textarea{
+     width: 150px;
+     height: 200px;
+ }
+ #p{
+    font-size: 15px;
+    margin-left: -20px;
+
+}
+p{
+    font-size: 15px;
+}
+
+ strong{
+     font-size: 15px;
+ }
+ .submit{
+    font-weight: bolder;
+    font-size: 20px;
+    width: 130px;
+    height: 40px;
+    float: right;
+    }
+    .form1{
+        margin-left: -130px;
+
+    }
+    #adress{
+        margin-left: 0px;
+       /*padding-left: -100px; */
+    }
+   
+    
+    #email-phone{
+            
+            margin-left: -40px;
+      
+  }
+  #pass{
+    margin-left: -10px;
+}
+
+#r-pass{
+margin-left: -20px;
+}
+
+.news{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: -30px;
+}
+.products-div1{
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#Apparal{
+    margin-left: 0px;
+   
+}
+#acces{
+    
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+#Shoes{
+   
+    margin-left: 0px;
+}
+#Handbags{
+    margin-left: 0px;
+
+}
+    #step3-right{
+        margin-left: 0px;
+        margin-top: 10px;
+}
+#imagesize{
+    width: 130px;
+    height: 130px;
+    /* margin-right: 30px; */
+}
+.select{
+    margin-left: 0px;
+}
+
+.step3-checks{
+    height: 30px;
+    width: 30px;
+    
+    margin-left: 0px;
+    margin-right:0px;
+}
+.step4-form{
+    margin-left: 0px;
+    margin-top: 80px;
+}
+#cname{
+    margin-left: -30px;
+}
+#ccard{
+    margin-left: -65px;
+
+}
+#eyear{
+    margin-left: -3px;
+}
+#wnews{
+    margin-right: 40px;
+}
+
+}
+        
+
+
+
+
+   /* .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    */
+
+ /* div .logo{
+     
+ }
+
+ div.navigation{
+     width: 250px;
+     height: 35px;
+    background-color: #19d859;
+    
+
+  } */
+/* .top-bar{
+    width: 100%;
+    height: 100px;
+  
+     display: flex;
+     justify-content:space-between ; 
+     background-color:red;
+     border: 5px solid red;
+    
+    flex-direction: row;
+   
+    flex-wrap: wrap;
+} 
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    background-color:red;
+    
+}
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+    border: 5px solid red;
+    background-color:green;
+   
+   
+} */

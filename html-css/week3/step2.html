@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="logo"><p>Logo</p> </div>
+        <div class="navigation"> <p>Navigation</p> </div>
+        
+      </div>
+    <article>
+        <h1>Sign up to yourcustomtailor.com</h1>
+        
+        <h2>Step 2/4 - how can we reach you?</h2>
+    </article>
+    
+        <section class="progress-bar">
+            <label for="file">  <h3>Progress:</h3></label>
+             <progress class="progress-bar" id="file" value="50" max="100" > 50% </progress>
+
+            <p>We will probably need to stay in touch somehow.Let us know how we can reach you?</p>
+       </section>
+       <br><br><br> <br><br><br>
+    <form action="step3.html" method="GET" class="form1">
+                 <div id="email-phone">
+                    <label for="email"> <strong>Email * &#x20;&nbsp;&nbsp;&nbsp;</strong></label>
+                    <input type="email" id="email" name="email" required class="input-field">
+                    <label for="phone"> <strong>&emsp;Phone  &#x20;&nbsp;&nbsp;&nbsp;</strong></label>
+                    <input type="tel" id="lname" name="phone"  pattern="[0-9]{7,12}" class="input-field"><br><br> <br>
+                </div>
+                <div id="pass">
+                    <label for="pass"> <strong>Password * &#x20;&nbsp;&nbsp;&nbsp;&#x20;&nbsp;&nbsp;&nbsp;</strong></label>
+                     <input type="password" id="pass" name="pass" required class="input-field"pattern="(?=.*[a-z])(?=.*[A-Z]).{10,}">
+                     Lowercase and uppercase min 10 characters<br><br> <br>
+                </div>
+                <div id="r-pass">
+                    <label for="rpass"> <strong>Re-entert Password* &#x20;&nbsp;&nbsp;&nbsp;</strong></label>
+                    <input type="password" id="rpass" name="rpass" required class="input-field" pattern="(?=.*[a-z])(?=.*[A-Z]).{10,}">
+                    
+                    <br><br> <br>
+
+                </div>
+                <p id="p">I want to sign up for newsletter</p>
+                <div class="news">
+                    <div >
+                        <label for="weekly" id="wnews">&nbsp;&nbsp;&nbsp;<strong>Weekly News</strong> </label>
+                       <input type="radio" id="weekly"  value="weekly" name="newsletter" class="shipping" checked>
+
+                    </div>
+                    <div>
+                        <label for="female" id="wnews">&nbsp;&nbsp;&nbsp;<strong>Monthly News</strong></label>
+                       <input type="radio" id="monthly"  value="monthly"name="newsletter"class="shipping">
+                    </div>
+                    <div>
+                        <label for="NoNewsletter">&nbsp;&nbsp;&nbsp;<strong>Don't send me news</strong></label>
+                        <input type="radio" id="NoNewsletter"  value="NoNewsletter"name="newsletter" class="shipping" checked>
+                    </div>
+                </div>
+                  <br><br><br> <br><br><br>
+               <input type="submit" class="submit" value="Next Step">
+     </form>
+</body>
+</html>
