@@ -97,6 +97,10 @@ strong{
     
 
 }
+#adress1{
+    margin-left: -22px;
+   /*padding-left: -100px; */
+  }
 #adress{
   margin-left: -12px;
  /*padding-left: -100px; */
@@ -107,6 +111,12 @@ strong{
    vertical-align: middle;
    border: 2px solid black;
 }
+#diff-address{
+    text-decoration: none;
+    color: red;
+    
+}
+
 .submit{
 font-weight: bolder;
 font-size: 30px;
@@ -114,9 +124,13 @@ width: 230px;
 height: 80px;
 float: right;
 }
+
+
 input[type=checkbox]:checked ~ .shipping-adress {
     display: none;
     }
+
+    
 /* #shiping:checked ~.shipping-adress{
     position: absolute;
 	top: -9999px;
