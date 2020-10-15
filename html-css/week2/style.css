@@ -1,0 +1,222 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+.container{
+    padding:5px;
+    font-size: 1.2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.container h2{
+    font-size: 2vw;
+}
+.header{
+    background-color:rgb(247, 244, 244);
+    height: 100px;
+    padding-left: 150px;
+    padding-top: 20px;
+}
+.header h2{
+    font-size: 2.5vw;
+}
+.header p{
+    color: darkgray;
+}
+.header-menue{ 
+    flex-wrap: wrap;
+    height: 60px;
+    padding-left: 150px ;
+    padding-top: 15px;
+}
+.header-menue a{
+    text-decoration: none;
+    padding-right: 20px;
+    color: black;
+    font-size: 1.2vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-menue a:visited{
+    color:gray; 
+}
+.banner-image img{
+    width: 100%;
+}
+.article-text{
+    display: flex;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 30px;
+    justify-content:space-evenly;
+}
+.article-left{
+    margin-right: 55px;
+}
+.article-right h2{
+    font-size: 2.2vw;
+}
+.gallery{
+   margin-top: 30px;
+}
+.gallery1{
+   display: flex;
+   justify-content: space-between;
+}
+.gallrey-left{
+  padding-left: 110px;
+  padding-right: 100px;
+  width: 44%;
+}
+
+.gallery-right{
+   padding-right: 200px;
+    width: 56%;
+}
+.logos-images{
+    display: flex;
+   flex-wrap: wrap;
+  
+}
+.logos-images a{
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+}
+.logos-images img{
+    height: 60px;
+    width: 80px;
+    
+   
+}
+.footer{
+    background-color:blueviolet;
+    color: white;
+}
+.footer1{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 120px;
+    padding-top: 40px;
+}
+.footer-find-us{
+
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+
+}
+.footer-archives{
+    display: flex;
+    flex-direction: column;
+}
+.footer-about-page{
+
+   
+}
+
+.footer-navigation{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+  @media(max-width: 680px){
+      body{
+          /* width: 80%; */
+      }
+    
+    
+       .container div { 
+
+           display: flex;
+           flex-direction: column;
+            margin-left: 1px;
+            margin-right: 5px;
+            padding-left: 0px;
+            padding-right: 0px;
+            font-size: 3vw;
+       
+        }
+      .container h2{
+            font-size: 5vw;
+            font-weight: bolder;
+            padding-bottom: 10px;
+            padding-top: 20px;
+        }
+        .container a{
+           
+           flex-direction: column;
+           
+            font-size: 3vw;
+           
+            
+        }
+        .header-menue{
+            height: auto;
+            align-content: center;
+
+        }
+        .header-menue a{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 5px;
+            justify-content: space-around;
+          
+          
+            
+        }
+        /* .logos-images{
+            border-style: solid;
+              border-color: rgb(255, 0, 0); 
+             margin-right: 0px;
+             width: 250px;
+            
+            
+        } */
+        div.logos-images {
+            /* border-style: solid;
+              border-color: rgb(255, 0, 0);  */
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: rows;
+           width: 150px;
+            height:320px;
+           
+        
+        
+        }
+         div.logos-images img{
+            padding: 0px;
+            margin: 0px;
+            width: 40px;
+            height: 40px;
+
+        } 
+
+        .footer1{
+            /* width: 80%; */
+            
+              align-content: center; 
+              justify-content: space-between;
+        }
+       .footer a{flex: 20%;
+               margin: 1em;
+            font-size: 3.5vw;
+           justify-content: space-around;
+        }
+        /* .logos-images a {
+           
+            display: flex;
+            flex-wrap: wraps;
+            
+        
+            background-color: blue;
+            
+        } */
+        
+    }
+  
