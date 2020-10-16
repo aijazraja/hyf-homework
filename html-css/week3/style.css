@@ -285,6 +285,9 @@ p{
  strong{
      font-size: 15px;
  }
+ #lname{
+     margin-left: 10px;
+ }
  .submit{
     font-weight: bolder;
     font-size: 20px;
