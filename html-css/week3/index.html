@@ -35,7 +35,7 @@
             <input type="text" id="fname" name="fname" required class="input-field">
             <label for="lname" id="L-name"> <strong >&emsp;Last Name * &#x20;&nbsp;&nbsp;&nbsp;</strong></label>
             <input type="text" id="lname" name="lname" required class="input-field"><br><br> <br>
-            <label for="country"> <strong id="country" >Country * &#x20;&nbsp;&nbsp;&nbsp;</strong></label>
+            <label for="country" id="L-name"> <strong id="country" >Country * &#x20;&nbsp;&nbsp;&nbsp;</strong></label>
             <select id="country" name="country"  class="input-field" required>
                 <option value="Afganistan">Denmark</option>
                 <option value="Albania">Pakistan</option>
@@ -44,15 +44,16 @@
              </select> <br><br><br>
              <label for="adress" id="adress"> <strong >Street Adress *&nbsp;&nbsp;&nbsp; </strong></label>
             <input type="text" id="adress" name="adress" required class="input-adress">
-            <label for="pcode" id="L-name"> <strong>&emsp;Post Code * &#x20;&nbsp;&nbsp;&nbsp;</strong></label>
-            <input type="text" pattern="[0-9]{3,4}" title="Four digit zip code"  value="3 or 4 digits" class="input-field"/>
+            <label for="pcode" id=> <strong>&emsp;Post Code * &#x20;&nbsp;&nbsp;&nbsp;</strong></label>
+            <input type="text" pattern="[0-9]{3,4}" title="Four digit zip code"  class="input-field" placeholder="4 digits" required/>
             <br><br> <br>
             <p>Use the same address for billing and shipping? Uncheck below to fill out a separate shipping address.</p><br>
             <label for="shiping" > <strong>Shipping address is same?</strong> </label>
             <input type="checkbox" id="shiping" name="shiping"  class="shipping" checked required>  
             <br><br> <br>
             <div class="shipping-adress">
-                <a href="index1.html" id="diff-address"><strong> Add new shipping address</strong></a> <br><br><br>
+                <!-- <input type="submit" class="add-address" value="Add address"> -->
+                <a href="index1.html" id="diff-address"><strong>Add new shipping address</strong></a> <br><br><br>
 
             </div>
             
@@ -91,8 +92,9 @@
                 </div>
                 </div>
                 <br><br>
-                <input type="submit" class="submit" value="Next Step">
-                
+                <button type="submit" class="submit">submit </button>
+                <!-- <input type="submit" class="submit" value="Next Step">
+                 -->
 
                 <!-- <a href="step2.html"><input type="submit" class="submit" value="Next Step"> </a> -->
             
