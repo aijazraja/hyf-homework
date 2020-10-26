@@ -1,0 +1,43 @@
+
+body{
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 80px;
+}
+
+h1{
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 80px;
+}
+
+button{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 130px;
+   margin-left: 260px;
+   font-weight: bolder;
+   border-radius: 8px;
+   font-size: 20px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin-left: 80px;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 80px;
+}
+div{
+    border: 2px solid black;
+    margin: 5px;
+    border-radius: 10px;
+}
+h2{
+    margin-left: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
