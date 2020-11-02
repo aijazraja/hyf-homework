@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Age-ify (A future age calculator)</h1>
+        <label for="dateOfBirth">Your date of Birth &nbsp;  &emsp;&emsp;</label>
+        <input type="text"  id="dateOfBirth"   pattern="[0-9]{4}" required placeholder="1984"><br><br>
+        <label for="futureAge">How old you will be in &nbsp; &nbsp; </label>
+        <input type="text"  id="futureAge"   pattern="[0-9]{4}" required placeholder="2030"> <br><br>
+        <button type="button" onclick="calculateAge()">Calculate</button>
+        <p id="ageCount"></p>
+    </div>
+    <div>
+        <h1>Goodboy-Oldboy (A dog age calculator)</h1>
+        <label for="ddateOfBirth">Your dog's date of Birth &emsp;&emsp; </label>
+        <input type="text"  id="dogDateOfBirth"   pattern="[0-9]{4}" required placeholder="1984"><br><br>
+        <label for="futureAge">How old your dog will be in &nbsp;  </label>
+        <input type="text"  id="dogFutureAge"   pattern="[0-9]{4}" required placeholder="2030"> <br><br>
+        <label for="ddateOfBirth">You want dog age in dog years? </label>
+        <input type="checkbox" id="isDogYears"><br><br>
+        <button type="button" onclick="calculateDogAge()">Calculate</button>
+         <p id="dogAgeCount"></p>
+        
+    </div>
+    <DIV>
+        <h1>Housey pricey (A house price estimator)</h1>
+        <h2>Price estimator for Peter</h2>
+        <p>Peter is considering a house that is 8m wide, 10m deep and 10m high. 
+            The garden size is 100m2</p>
+        <P id="peterPrice"></P>
+
+        <h2>Price estimator for Julia</h2>
+        <p>Julia is considering a house that is 5m wide, 11m deep and 8m high. 
+            The garden size is 70m2.</p>
+        <p id="juliaPrice"></p>
+        
+    </DIV>
+    <div>
+        <h1>Ez Namey (Startup name generator)</h1>
+        <p>Press button to generate a startup name</p>
+        <button type="button" onclick="ezNamy()">Generate</button>
+        <p id="ezname"></p>
+
+
+    </div>
+     
+    <script src="index.js"></script>
+</body>
+</html>
