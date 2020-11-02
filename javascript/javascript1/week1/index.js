@@ -2,9 +2,9 @@
    /* let yearOfBirth=document.getElementById("dateOfBirth").value ;
     console.log(yearOfBirth);*/
 
-    /****************************************Future Age Calculator****************************************************** */
+    /****************************Future Age Calculator****************** */
                    
-                        /* ************************Human****************************/
+    /* ************************Human****************************/
 
     function calculateAge(){
 
@@ -17,7 +17,7 @@
 
     }
 
-                        /* ************************Dog****************************/
+    /* ************************Dog****************************/
 
     function calculateDogAge(){
         let dogYearOfBirth = document.getElementById("dogDateOfBirth").value ;
@@ -28,7 +28,7 @@
         
         if(shouldShowResultInDogYears){
             //console.log(shouldShowResultInDogYears);
-            adogYear *=5;
+            adogYear *=7;
             let text1="Your dog will be "+adogYear+" dog years old in "+dogYearFuture;
             document.getElementById("dogAgeCount").innerHTML=text1;
 
@@ -38,9 +38,9 @@
 
            }
         }
-/* *********************************************House Price Estimator************************************************************ */
+         /* ************************House Price Estimator****************************** */
 
-                                 /* ************************Peter****************************/
+         /* ************************Peter****************************/
 
         let widthPeter =8;
         let deepPeter = 10;
@@ -50,42 +50,67 @@
         let volumeInMeters =widthPeter*deepPeter*heightPeter;
         let housePricePeter = volumeInMeters * 2.5 * 1000 + gardenSizeInM2 * 300;
         //console.log(housePricePeter);
-        if( hunderedM2Price>=housePricePeter){
-            let text3 ="Actural price for 100m2 house is "+hunderedM2Price+" <br>Peter is paying "+housePricePeter+ " which much less .";
+        if( hunderedM2Price>housePricePeter){
+            let text3 ="Actural price for 100m2 house is "+hunderedM2Price+
+            " <br>Peter is paying "+housePricePeter+ " which much less .";
             document.getElementById("peterPrice").innerHTML=text3;
-        }else{
-            let  text3 ="Actural price for 100m2 house is "+hunderedM2Price+" <br>Peter is paying "+housePricePeter+ " which much more .";
+        }
+        else if( hunderedM2Price===housePricePeter){
+            let text3 =" <br>Peter is paying "+housePricePeter+ " which is right amount .";
+            document.getElementById("peterPrice").innerHTML=text3;
+        }
+        else{
+            let  text3 ="Actural price for 100m2 house is "+hunderedM2Price+
+            " <br>Peter is paying "+housePricePeter+ " which much more .";
             document.getElementById("peterPrice").innerHTML=text3;
         }
 
 
 
-                       /* ************************Julia****************************/
+        /* ************************Julia****************************/
 
-        const widthJulia =5;
-        const deepJulia = 11;
-        const heighJulia =8;
-        const gardnSizeInM2=70;
-        const seventyM2Price =1000000;
-        const volumeInMetersJulia =widthJulia*deepJulia*heighJulia;
-        const housePriceJulia = volumeInMetersJulia * 2.5 * 1000 + gardnSizeInM2 * 300;
-       // console.log(housePriceJulia);
-        if( seventyM2Price>=housePriceJulia){
-            let text4 ="Actural price for 70m2 house is "+seventyM2Price+" <br>Julia is paying "+housePriceJulia+ " which much less .";
+        let widthJulia =5;
+        let deepJulia = 11;
+        let heighJulia =8;
+        let gardnSizeInM2=70;
+        let seventyM2Price =1000000;
+        let volumeInMetersJulia =widthJulia*deepJulia*heighJulia;
+        let housePriceJulia = volumeInMetersJulia * 2.5 * 1000 + gardnSizeInM2 * 300;
+       
+        if( seventyM2Price>housePriceJulia){
+           
+            let text4 ="Actural price for 70m2 house is "+seventyM2Price+
+            " <br>Julia is paying "+housePriceJulia+ " which much less .";
             document.getElementById("juliaPrice").innerHTML=text4;
-        }else{
-            let  text4 ="Actural price for 70m2 house is "+seventyM2Price+" <br>Julia is paying "+housePriceJulia+ " which much more .";
+        }
+        else if( seventyM2Price===housePriceJulia){
+
+            //console.log(seventyM2Price);
+            
+            let text4 ="Actural price for 70m2 house is "+seventyM2Price+
+            " <br>Julia is paying "+housePriceJulia+ " which is right amount .";
+            document.getElementById("juliaPrice").innerHTML=text4;
+        }
+        else{
+            let  text4 ="Actural price for 70m2 house is "+seventyM2Price+
+            " <br>Julia is paying "+housePriceJulia+ " which much more .";
             document.getElementById("juliaPrice").innerHTML=text4;
         }
 
-        /* *********************************************Ez Namey (Startup name generator)************************************************************ */
+        /* ****************Ez Namey (Startup name generator)********************* */
         
         function ezNamy(){
-            let firstWords= ["Mindstuff","Black","Tech","Diamondback","Jumping","Great","Industry","Zest","Teletrans","Melt"];
-            let secondWords=["Corporation","Soapdots App","Slantwise Ltd","Care","Systems","Strut",".Al","Woodpecker Care","Inc","Technologies"];
+
+            let firstWords= ["Mindstuff","Black","Tech","Diamondback","Jumping",
+            "Great","Industry","Zest","Teletrans","Melt"];
+
+            let secondWords=["Corporation","Soapdots App","Slantwise Ltd",
+            "Care","Systems","Strut",".Al","Woodpecker Care","Inc","Technologies"];
+
             let random1= Math.floor(Math.random() * 10) + 0;
             let startupName =firstWords[random1] +" "+ secondWords[random1];
-            let text5="Startup Name : "+startupName+ "<br>Press 'Generate' again to get a new name"
+            let text5="Startup Name : "+startupName+
+             "<br>Press 'Generate' again to get a new name"
             document.getElementById("ezname").innerHTML=text5;
             //console.log(startupName);
 
