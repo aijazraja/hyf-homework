@@ -12,8 +12,8 @@
 
 
 
-var firstName='';
-let lastName='';
+const firstName='';
+const lastName='';
 function getFullName(firstName,lastName){
   return firstName+' '+lastName;
 }
@@ -29,7 +29,7 @@ console.log('\n\n (1b) :       Formal fullname  \n\n ');
      *********************************************/   
            
 
-let useFormalName = true;
+const useFormalName = true;
 function getFullName(firstName,lastName,useFormalName){
   if(useFormalName)
   return 'Lord'+' '+ firstName+' '+lastName;
@@ -38,7 +38,7 @@ function getFullName(firstName,lastName,useFormalName){
 }
 fullName=getFullName('Benjamin', 'Hughes',false);
 console.log(fullName);
-let formalName=getFullName('Benjamin', 'Hughes',true);
+const formalName=getFullName('Benjamin', 'Hughes',true);
 console.log(formalName);
   // if we will not pass arguments on calling function then it will display
    //nothing 
@@ -205,9 +205,9 @@ function canBuyMoreCandy() {
         return false;
 
 }
-let c=canBuyMoreCandy();
+const buyMore=canBuyMoreCandy();
 //console.log(c);
-if(c){
+if(buyMore){
     console.log("You can buy more, so please do");
 }else
      console.log("Enough candy for you!");
