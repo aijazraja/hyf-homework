@@ -1,0 +1,51 @@
+
+ 1 - Item array removal 
+ (7) ["Peter", "Yana", "kristina", "Rasmus", "Samuel", "katrine", "Tala"]
+
+
+
+ 2 - When will we be there?? 
+ Total travel time is : 8 hours and 38 minutes
+ 
+
+
+ 3 - Series duration of my life
+ Game of thrones took 0.01% of my life
+ Sopranos took 0.012% of my life
+ The Wire took 0.009% of my life
+
+ In total that is 0.031% of my life
+
+
+ 4 - Smart-ease 
+
+
+ 4(a) -Save a note
+  (2) [{…}, {…}]
+
+4(b) -Get a note
+ {content: "Pick up groceries", id: 1}
+ 
+ 4(c) -Log out notes
+ The note with id: 1 has the following note text : Pick up groceries
+ The note with id: 2 has the following note text : Do laundry
+ 
+ 5 -Smart phone usage app   
+ 
+ 5(a) -Adding an activity
+ (3) [{…}, {…}, {…}]
+ 
+ 5(b) -Show my status
+ 5(c) -Usage limit 
+ You have added 4 activites.The amount to 95 min.of usage
+ 
+ 5(d) -Extra feature
+
+ 5(d.1) -Improved actvities function
+ (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+ 
+ 5(d.2) -Show Status Improve
+ Number of actitivies today: 6
+ 
+ 5(d.3) -Activity, user used most
+ Facebook
