@@ -319,11 +319,7 @@ function activityUsedMost(){
           twitterCount++
         }
 
-     /*for(let j=i;j<activitiesImproved.length;j++){
-       if(activitiesImproved[i].duration<=activitiesImproved[j].duration){
-         temp=activitiesImproved[i].duration;
-       }
-     }*/
+   
   }
   if(Math.max(youtubeCount,facebookCount,twitterCount)==youtubeCount)
 console.log('Youthube');
@@ -332,9 +328,7 @@ console.log('Facebook');
 else if(Math.max(youtubeCount,facebookCount,twitterCount)==twitterCount)
 console.log('Twitter');
 }
-  /*count=Math.max(youtubeCount,facebookCount,twitterCount);
-    console.log(count);
-*/
+
 
 activityUsedMost()
 
