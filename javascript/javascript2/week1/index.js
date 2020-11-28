@@ -5,17 +5,17 @@
 const danishWords = ["bil", "plante", "kaffe", "bog", "ø", "planetarium"];
 const smalleLetter=getSmallestLetter(danishWords); // returns 'ø'
 function getSmallestLetter(words){
-    let temp=danishWords[0];
-    for(let i=0;i<danishWords.length;i++){
-         if(danishWords[i].length<=temp.length){
-             temp=danishWords[i];
-             danishWords[i]=danishWords[0];
-             danishWords[0]=temp;
+    let smallestLetter=danishWords[0];
+    for(let i=1;i<danishWords.length;i++){
+         if(danishWords[i].length<=smallestLetter.length){
+            smallestLetter=danishWords[i];
+             /* danishWords[i]=danishWords[0];
+            danishWords[0]=temp; */
 
          }
 
     }
-    return danishWords[0];
+    return smallestLetter;
     //console.log(danishWords[0])
 
 }
@@ -55,7 +55,13 @@ function danishLettersCounter(danString){
     /* console.log(total);
     console.log(øCount);
     console.log(åCount); */
-    return  'Toral Danish letter: '+total+ '<br> No of æ: '+æCount+'<br> No of å: '+åCount+'<br> No of ø: '+øCount;
+    return {
+        total:total,
+        å:åCount,
+        ø:øCount,
+        æ:æCount
+    }
+    //return  'Toral Danish letter: '+total+ '<br> No of æ: '+æCount+'<br> No of å: '+åCount+'<br> No of ø: '+øCount;
 
 }
 document.getElementById('danishLetters').innerHTML=danishLetters;
@@ -75,8 +81,8 @@ console.log(danishLetters);
      let randomAnimal=spiritAnimals[Math.floor(Math.random()*10 )];
     let name1=document.getElementById('name').value;
      if(name1==''){
-         let a='Please enter name'
-        document.getElementById("h1").innerHTML=a;
+         const text='Please enter name'
+        document.getElementById("h1").innerHTML=text;
      }else {
         //console.log(name1);
         let name=document.getElementById('name').value+ ' ' + randomAnimal;
@@ -107,6 +113,7 @@ console.log(danishLetters);
   
 }
  */
+document.getElementById("select").addEventListener("change", onChange);
 
 
     function onChange(){

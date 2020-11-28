@@ -9,12 +9,13 @@ function randerProducts(products){
 
     for(let i=0;i<products.length;i++){
     const liElement=document.createElement("li");
-    liElement.innerHTML='<h2>'+products[i].name +'</h2> Price:'+products[i].price+'<br> Rating:'+products[i].rating+'<br> <br>'
+    const h2Tag = document.createElement("h2");
+    h2Tag.innerHTML=products[i].name;
+    ulList.appendChild(h2Tag);
+    liElement.innerHTML= ' Price:'+products[i].price+'<br> Rating:'+products[i].rating+'<br> <br>'
+    
     ulList.appendChild(liElement);
-
-
-
-      }
+  }
 }
 randerProducts(products);
 
