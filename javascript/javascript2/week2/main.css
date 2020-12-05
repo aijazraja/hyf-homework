@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   margin: 10px;
+   margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #F9FBFD;
+}
+
+.header{
+    
+    background-color:green;
+    height: 100px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* position: fixed ; */
+}
+
+#product, #productbyPrice {
+    height: 35px;
+    margin-top: 05px;
+}
+
+.label{
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topMenueBar {
+    margin-top: 30px;
+    display:flex;
+    flex-direction:row ;
+    flex-wrap: wrap;
+   justify-content: flex-start;
+}
+
+.topMenueBar a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    padding-right: 30px;
+}
+
+#select1{
+    height: 25px;
+    margin-bottom: 01px;
+    margin-left: 5px;
+}
+
+h2 {
+    
+   align-self: start;
+}
+
+ul{
+    padding: 10px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   justify-content: space-evenly;
+    list-style-type: none;
+    border: 2px solid black;
+    margin-top: 15px;
+
+}
+
+#liElement{
+   
+    padding: 20px;
+    border: 2px solid #d61515;
+    margin:10px;
+    border-radius: 25px;
+    
+}
+
+.footer{
+    background-color:skyblue;
+    height: 100px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:space-between;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.footer p{
+    font-size: 15px;
+}
+.footerDiv1 p{
+    padding:10px;
+    vertical-align: middle;
+}
+.footerDiv3 a{
+    text-decoration: none;
+    color: black;
+}
