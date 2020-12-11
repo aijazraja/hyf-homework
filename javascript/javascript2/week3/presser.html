@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="presser.css">
+    
+</head>
+<body>
+    
+    <main>
+        <div class="inputButton">
+            <form action="" id="form1">
+                <input type="number" id="inputInSeconds" placeholder="Play time in seconds" ><br><br>
+            </form>
+            
+            <button id="startButton" class="buttonClass">Start game</button>
+            <h2 id="winner"></h2>
+            
+        </div>
+
+        <h1>
+            <span id="countdown">
+                
+
+            </span>
+            <h2 id="gameOver"></h2>
+        </h1>
+        
+       <div id="pressers" class="pressers">
+        
+            <div class="pressS">
+                <h3>Press S</h3>
+                <P id="Scount"> </P>
+            
+            </div>
+            <div class="pressL">
+                <h3>Press L</h3>
+                <P id="Lcount"> </P>
+            
+            </div>
+           
+            
+       </div><br>
+       <div>
+        <button id="restart" class="buttonClass">Restart</button>
+    </div>
+   </main>
+   <!-- <canvas id="my-canvas"></canvas> 
+   <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.13/dist/index.min.js"></script> -->
+    <script src="presser.js"></script>
+</body>
+</html>
