@@ -1,15 +1,8 @@
-
-/* var confettiSettings = { target: 'my-canvas' };
-var confetti = new ConfettiGenerator(confettiSettings);
-confetti.render(); */
-
-
-
   const seconds= document. getElementById('inputInSeconds');
   let countS=0;
-let countl=0;
+  let countl=0;
  
- // console.log(stopGameLimit);
+ 
 seconds.addEventListener('input',start);
 function start(){
    
@@ -22,33 +15,42 @@ function start(){
         let seconds1 = document.getElementById("countdown").textContent;
         const countdown = setInterval(function() {
         seconds1--;
-       //console.log(seconds1)
+   
         document.getElementById("countdown").textContent= seconds1;
         if (seconds1 <= 0) clearInterval(countdown);
         }, 1000);
 
-    countS=0;
-    countl=0;
+        countS=0;
+        countl=0;
     document.addEventListener('keydown', printKeyCount);
    
     setTimeout(() => {
         document.removeEventListener('keydown' ,printKeyCount);
+        const confetti = new ConfettiGenerator({ target: 'my-canvas', width: 300, height: 110 });
+        confetti.render()
               const score='L= '+countl+'  ,  S= '+countS;
 
-             if (countS< countl)
-             document.getElementById('winner').innerHTML='L is winner <br> Score<br>'+score;
-            // console.log('L is winner')     
-             else if(countS> countl)
-             document.getElementById('winner').innerHTML='S is winner <br> Score<br>'+score;
-             //console.log('S is winner') 
+             if (countS< countl){
+             document.getElementById('winner').innerHTML='L is winner <br> Score<br>'+score ;
+                
+                }
+              
+             else if(countS> countl){
+                
+             document.getElementById('winner').innerHTML='S is winner <br> Score<br>'+score ;
+               // const confettiSettings = ;
+                
+                confetti.render();
+                }
+         
              else if(countl==countS && countS>0 || countl>0)
-             document.getElementById('winner').innerHTML='Match is draw <br> Score<br>'+score;   
+             document.getElementById('winner').innerHTML='It\'s a tie <br> Score<br>'+score;   
              else if(countl==0 && countS==0)
-             document.getElementById('winner').innerHTML='No key is pressed'  
+             document.getElementById('winner').innerHTML='No key is pressed <br><br><br>'  
              document.getElementById('gameOver').innerHTML='Game Over' ;
 
 
-                var x = document.getElementById("pressers");
+                const x = document.getElementById("pressers");
                 if (x.style.display === "none") {
                     x.style.display = "block";
                 } else {
@@ -93,7 +95,4 @@ function reStart(){
 
 }
 
-
-
-                        /* dummy code */
 

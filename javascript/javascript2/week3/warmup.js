@@ -67,28 +67,7 @@ function printPosition(position){
     console.log('latitude :'+position.coords.latitude);
     console.log('longitude :'+position.coords.longitude);
 }
-/* 6 - Optional Now show that location on a map using fx the Google maps api */
 
-
-/* document.getElementById('buttton3').addEventListener('click',findMeOnGoogle);
-function findMeOnGoogle (){
-    navigator.geolocation.watchPosition(printGoogleImage);
-}
-function printGoogleImage(position){
-   //  const lat=pos.coords.latitide;
-   //const long=pos.coords.longitude; 
-   var latLong = position.coords.latitude + "," + position.coords.longitude;
-
-    let imgUrl="https://maps.googleapis.com/maps/api/staticmap?center="
-    +latLong+"&zoom=14&size=400x300&sensor=false&key=YOUR_KEY";
-    console.log(imgUrl);
-
-  // let imgUrl="https://www.openstreetmap.org/#map=19/${lat}/${long}"; 
-
-    document.getElementById("gLocation").innerHTML = "<img src='"+imgUrl+"'>";
-}
-
- */
 
  /* 7-Create a function called runAfterDelay. It has two parameters: delay and 
  callback. When called the function should wait delay seconds and then call the

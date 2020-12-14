@@ -1,7 +1,7 @@
 /* Finctions as variable */
                             console.log('Exercise 1 \n\n')
-//const functionsArray=[function1(),function2(),function3()];
-var funcs = [
+
+ let funcs = [
     function () {
         console.log('Body Function 1 [0]')
     },
@@ -15,7 +15,7 @@ var funcs = [
     funcs.forEach(function (func) {
     func(); // outputs  1, then 2
     });
-    //for (let i = 0; i < funcs.length; i++) funcs[i]();
+    
     
     //Create a function as a const and try creating a function normally. 
     //Call both functions. Read up on this if you are interested:
