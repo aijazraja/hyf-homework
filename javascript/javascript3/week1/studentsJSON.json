@@ -1,0 +1,31 @@
+{
+    "student":[
+        {
+            "name":"Aijaz",
+            "class":"class 16",
+            "institue":"HYF",
+            "id":4342,
+            "is_brilliant":false,
+            "subject":["C","C++","Algorithms","Data structures","Web Programming"],
+            "marks":[40,45,35,60,25]
+        },
+        {
+            "name":"Alex",
+            "class":"class 16",
+            "institue":"HYF",
+            "id":4341,
+            "is_brilliant":true,
+            "subject":["C","C++","Algorithms","Data structures","Web Programming"],
+            "marks":[60,25,35,50,55]
+        },
+        {
+            "name":"Victoria",
+            "class":"class 16",
+            "institue":"HYF",
+            "id":4340,
+            "is_brilliant":true,
+            "subject":["C","C++","Algorithms","Data structures","Web Programming"],
+            "marks":[43,54,50,60,35]
+        }
+    ]
+}
