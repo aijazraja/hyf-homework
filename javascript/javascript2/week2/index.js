@@ -98,7 +98,7 @@ console.log('\n(8) Average rating :' +sum/movies.length);
 
 
 /*9: Count the total number of Good, Average and Bad movies using reduce. A return could fx be {goodMovies: 33, averageMovies: 45, goodMovies: 123} Optional */
-let moviesObject={
+/* let moviesObject={
     goodMovies: 0,
     averageMovies: 0,
     badMovies: 0
@@ -110,11 +110,27 @@ movies.reduce((tageCount,oneMovie)=>{
     else if(oneMovie.tag=='Average')
     moviesObject.averageMovies++;
     else if(oneMovie.tag='Bad')
-    moviesObject.badMovies++
+    moviesObject.badMovies++;
 
 });
 console.log('\n(9) No of good,bad and average movies ')
-console.log(moviesObject);
+console.log(moviesObject); */
 
+let movies1 = movies.reduce((tageCount,oneMovie)=>{
+    if(oneMovie.tag=='Good'){
+        tageCount.goodMovies++;
+    }
+    
+    else if(oneMovie.tag=='Average'){
+        tageCount.averageMovies++;
+    }
+    
+    else if(oneMovie.tag='Bad'){
+        tageCount.badMovies++;
+    }
+    return tageCount; 
+},{goodMovies: 0, averageMovies: 0, badMovies: 0});
+console.log('\n(9) No of good,bad and average movies ')
+console.log(movies1);
 
 
