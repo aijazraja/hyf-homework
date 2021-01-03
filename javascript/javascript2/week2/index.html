@@ -1,0 +1,71 @@
+<head>
+    <title>HyfBay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,800"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+          <div class="header">
+                <div class="logo">
+                  <a href="index.html"><img src="hyflogo.png" alt="" height="96px" width="270px"></a>
+                      
+                  </div>
+                  <div class="search">
+                      <label class="label" for=""> Search products by name</label>
+                      <input type="search" id="product" placeholder="  Product Name">
+                      <label class="label" for=""> Search products by price(Max Price)</label>
+                      <input type="number" id="productbyPrice" placeholder="  Maximum Price">  
+
+                </div>
+                <div class="topMenueBar">
+                  <a href="index.html">Home</a>
+                  <a href="index.html">About Us</a>
+                  <a href="index.html">Products</a>
+                  <a href="index.html">Sales</a>
+                  <a href="index.html">Contact Us</a>
+                  <label class="label" for="">Sort by </label>
+                  <select name="" id="select1">
+                    <option value="">-------Select-------</option>
+                    <option value="" id="minPrice">Minumum Price</option>
+                    <option value="" id="maxPrice">Maximum Price</option>
+                    <option value="" id="maxRating">Top Rating</option>
+                  </select>
+
+                </div>
+                  
+        </div>
+        <div class="pdorductsData">
+            <ul id="productList">
+              
+            </ul>
+        </div>
+        <div class="footer">
+          <div class="footerDiv1">
+            <p> ©Copyright 2020</p> 
+            <p>Website by HYF</p>
+         </div>
+          <div class="footerDiv2"> 
+              <h4>Contacts Us</h4>
+              <p>HackYourFuture</p>
+              <p>Enghavevej 82C</p>
+              <p>2100,Copenhagen</p>
+          </div>
+          <div class="footerDiv3">
+            <a href="#"> <h4>About Us</h4></a>
+            <a href="#">Customer Stories</a><br>
+            <a href="#">Partners</a><br>
+            <a href="#">Carrer</a><br>   
+          </div>
+          <div class="footerDiv4">
+            <img src="SM1.png" alt="" height="94px" width="150px">
+
+          </div>
+        </div>
+    </main>
+    <script src="hyfBayHelpers.js"></script>
+    <script src="main.js"></script>
+ </body>
