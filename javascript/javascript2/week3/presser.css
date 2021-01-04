@@ -1,0 +1,99 @@
+*{
+    margin:o;
+    padding:0;
+}
+body{
+    text-align: center;
+    /* position: relative; */
+   
+}
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+.inputButton {
+    
+    text-align: center;
+  /* border: 3px solid green; */
+  padding: 15px;
+
+}
+.inputButton h1{
+    color:darkgoldenrod;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#countdown{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    border: 2px solid red;
+    border-radius: 60%;
+    width: 100px;
+    padding:25px;
+  
+}
+h1{
+    margin-bottom: 40px;
+}
+#gameOver{
+    color: red;
+}
+.pressers{
+   
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    /* border: 3px solid red; */
+    
+    
+}
+
+.pressS{
+    text-align: center;
+    border-right: 1px solid green;
+    border-top: 1px solid green;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+.pressL{
+    text-align: center;
+    border-left: 1px solid green;
+    border-top: 1px solid green;
+    padding-left: 30px; 
+    padding-top: 10px;
+    padding-bottom: 100px;
+
+}
+.buttonClass{
+    height: 30px;
+    width: 100px;
+    background-color:green ;
+    color: white;
+   
+}
+#inputInSeconds{
+    height: 30px;
+    text-align: center;   
+    width: auto;
+}
+#winner{
+   
+    color:gold;
+   
+    /* font-family:'Courier New', Courier, monospace;  */
+}
+
+#relative{
+    position: relative;
+}
+#absolute{
+    position:absolute;
+    right: 30px;
+    top: 0px;
+    left:10px;
+    
+
+}
+
