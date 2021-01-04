@@ -27,20 +27,7 @@ function getData(){
         document.getElementById('city').innerHTML='Last serached city : '+weatherdata.name;
         else
         document.getElementById('city').innerHTML=' City: '+weatherdata.name;
-        document.getElementById('temperature').innerHTML='Temperature : '+Math.round(parseFloat(weatherdata.main.temp)-273.15)+'°C';
-        const icon1=weatherdata.weather[0].icon;
-        document.getElementById('image').src='http://openweathermap.org/img/wn/'+icon1+'.png';
-        document.getElementById('image').style.height='100px';
-        document.getElementById('wind-speed').innerHTML='Wind Speed: '+weatherdata.wind.speed+' m/s';
-        document.getElementById('cloudy').innerHTML='Cloudiness: '+weatherdata.clouds.all+' %';
-        const sunrise1=new Date (weatherdata.sys.sunrise*1000);
-        const sunriseHours=sunrise1.getHours();
-        const sunriseMinutes=sunrise1.getMinutes();
-        const sunset1=new Date (weatherdata.sys.sunset*1000);
-        const sunsetHours=sunset1.getHours();
-        const sunsetMinutes=sunset1.getMinutes();
-        document.getElementById('sunrise-sunset').innerHTML='Sunrise: '+sunriseHours+':'+sunriseMinutes+'<br><br>  '+'Sunset:'+sunsetHours+':'+sunsetMinutes;
-
+        renderWeather(weatherdata);
         document.removeEventListener('click',getData)
 
     })
@@ -57,21 +44,9 @@ function geoFindMe() {
         fetch(url)
         .then(response=>response.json())
         .then((weatherdata)=>{
-        document.getElementById('city').innerHTML='Your Location: '+weatherdata.name;
-        document.getElementById('temperature').innerHTML='Temperature : '+Math.round(parseFloat(weatherdata.main.temp)-273.15)+'°C';
-        const icon1=weatherdata.weather[0].icon;
-        document.getElementById('image').src='http://openweathermap.org/img/wn/'+icon1+'.png';
-        document.getElementById('image').style.height='100px';
-        document.getElementById('wind-speed').innerHTML='Wind Speed: '+weatherdata.wind.speed+' m/s';
-        document.getElementById('cloudy').innerHTML='Cloudiness: '+weatherdata.clouds.all+' %';
-        const sunrise1=new Date (weatherdata.sys.sunrise*1000);
-        const sunriseHours=sunrise1.getHours();
-        const sunriseMinutes=sunrise1.getMinutes();
-        const sunset1=new Date (weatherdata.sys.sunset*1000);
-        const sunsetHours=sunset1.getHours();
-        const sunsetMinutes=sunset1.getMinutes();
-        document.getElementById('sunrise-sunset').innerHTML='Sunrise: '+sunriseHours+':'+sunriseMinutes+'<br><br>  '+'Sunset:'+sunsetHours+':'+sunsetMinutes;
-
+          document.getElementById('city').innerHTML='Your Location: '+weatherdata.name;
+          renderWeather(weatherdata);
+        
         })
     }
   
@@ -89,4 +64,24 @@ function geoFindMe() {
   }
   
   document.querySelector('#find-me').addEventListener('click', geoFindMe);
+
+
+  function renderWeather(weatherdata){
+        
+        document.getElementById('temperature').innerHTML='Temperature : '+Math.round(parseFloat(weatherdata.main.temp)-273.15)+'°C';
+        const icon1=weatherdata.weather[0].icon;
+        document.getElementById('image').src='http://openweathermap.org/img/wn/'+icon1+'.png';
+        document.getElementById('image').style.height='100px';
+        document.getElementById('wind-speed').innerHTML='Wind Speed: '+weatherdata.wind.speed+' m/s';
+        document.getElementById('cloudy').innerHTML='Cloudiness: '+weatherdata.clouds.all+' %';
+        const sunrise1=new Date (weatherdata.sys.sunrise*1000);
+        const sunriseHours=sunrise1.getHours();
+        const sunriseMinutes=sunrise1.getMinutes();
+        const sunset1=new Date (weatherdata.sys.sunset*1000);
+        const sunsetHours=sunset1.getHours();
+        const sunsetMinutes=sunset1.getMinutes();
+        document.getElementById('sunrise-sunset').innerHTML='Sunrise: '+sunriseHours+':'+sunriseMinutes+'<br><br>  '+'Sunset:'+sunsetHours+':'+sunsetMinutes;
+
+
+  }
 
