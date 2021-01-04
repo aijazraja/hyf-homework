@@ -3,10 +3,10 @@
   let countl=0;
  
  
-seconds.addEventListener('input',start);
+seconds.addEventListener('focusout',start);
 function start(){
    
-    const secLimit = parseInt(seconds.value);
+    const secLimit =parseInt( seconds.value,10);
     document. getElementById('countdown').innerHTML=secLimit;
     document.getElementById('startButton').addEventListener('click',onStartClick);
 
