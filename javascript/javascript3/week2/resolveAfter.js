@@ -2,7 +2,7 @@
  return a promise that resolves after the resolveAfter seconds has passed.
 When you have written the promise, use it with async/await */
 
-myFunction(8).then((message) => {
+delay(8).then((message) => {
     console.log(message); // logged out after 8 seconds
 })
     .catch((error) => {
@@ -10,7 +10,7 @@ myFunction(8).then((message) => {
 
     });
 
-function myFunction(seconds) {
+function delay(seconds) {
     return new Promise((resolve, reject) => {
         console.log('wait for ' + seconds + ' sec')
         setTimeout(() => {
@@ -20,19 +20,16 @@ function myFunction(seconds) {
                 reject('logged out before 8 seconds');// error
 
         }, seconds * 1000);
-
     });
-}
+  }
 
                 //async wait
- myAsyncFunction(8).then(() => {
+delayAscync(8).then(() => {
     console.log("I am called asynchronously"); 
 })
  
-async function myAsyncFunction(seconds) {
-    console.log('Pleae wait');
-    await setTimeout(() => {
+async function delayAscync(seconds) {
+     setTimeout(() => {
         console.log('After 8 seconds')
-
     }, seconds * 1000);
-}
+  }

@@ -14,7 +14,7 @@ async function movies(seconds) {
             movies.forEach(movie => {
                 console.log(movie.title);
             });
-        }, seconds * 3);
+        }, seconds * 1000);
 
     }
     catch (err) {
@@ -31,7 +31,7 @@ movies1(3).then(() => {
 
 })
     .catch((error) => {
-        console - log('Error on fetching movies data ' + error);
+        console.log('Error on fetching movies data ' + error);
 
     });
 
@@ -39,7 +39,7 @@ movies1(3).then(() => {
 function movies1(seconds) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            if (fetch(moviesApi1)) {
+          
                 fetch(moviesApi1)
                     .then((response) => response.json())
                     .then((movieData) => {
@@ -49,12 +49,6 @@ function movies1(seconds) {
 
                         resolve();
                     })
-
-            }
-            else {
-                reject();
-            }
         }, seconds * 1000);
-
     })
 }

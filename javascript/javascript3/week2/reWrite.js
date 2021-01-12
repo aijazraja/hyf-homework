@@ -2,7 +2,7 @@
 The getCurrentPosition function is probably going to throw an error, 
 but that is fine. As long as you can use it as a promise.Example of usage */
 
-setTimeoutPromise(3000).then(() => {
+setTimeoutPromise(3).then(() => {
     console.log("Called after 3 seconds");
 });
 
@@ -12,7 +12,7 @@ function setTimeoutPromise(seconds) {
         setTimeout(() => {
             resolve();
 
-        }, seconds * 3);
+        }, seconds * 1000);
     })
 }
 
