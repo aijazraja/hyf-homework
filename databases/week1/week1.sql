@@ -21,8 +21,8 @@ WHERE status.name= 'Done';
 
 -- Find all the tasks that are not marked as done
 
-SELECT task.title,status.name
-FROM task
+SELECT task.title, status.name
+FROM task, status
 INNER JOIN status ON task.status_id = status.id
 WHERE status.name= 'Not started' OR status.name= 'In progress' ;
 
