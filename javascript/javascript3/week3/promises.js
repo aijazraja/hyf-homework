@@ -12,7 +12,7 @@ const url1 =
 const url2 = "https://api.github.com/search/repositories?q=user:qamarfj";
 const url3 = "https://api.github.com/search/repositories?q=user:cph-kiwi";
 
-class GetStudentRepos {
+class StudentRepos {
   constructor(url) {
     this.url = url;
   }
@@ -43,7 +43,7 @@ class GetStudentRepos {
     document.body.appendChild(ulTag);
   }
 }
-const student1 = new GetStudentRepos(url1);
-const student2 = new GetStudentRepos(url2);
-const student3 = new GetStudentRepos(url3);
+const student1 = new StudentRepos(url1);
+const student2 = new StudentRepos(url2);
+const student3 = new StudentRepos(url3);
 Promise.all([student1.get(), student2.get(), student3.get()]).then(() => {});
