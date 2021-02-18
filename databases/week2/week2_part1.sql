@@ -1,6 +1,6 @@
 -- Add a task with these attributes: title, description, created, updated, due_date, status_id, user_id
 insert into task(title, description, created, updated, due_date, status_id, user_id)
-values('meeeting','meeting with comapany owner','2021-01-15 task','2021-01-19 06:54:16','2021-02-18 06:54:16',2,3);
+values('meeeting','meeting with comapany owner','2021-01-15 06:54:16','2021-01-19 06:54:16','2021-02-18 06:54:16',2,3);
 
 -- change the title of a task
 UPDATE task 

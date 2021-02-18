@@ -3,7 +3,7 @@
 -- Table Movies
 -- -----------------------------------------------------
 CREATE TABLE Movies (
-  id INT NOT NULL AUTO_INCREMENT,
+  id INT(5) NOT NULL AUTO_INCREMENT,
   Title VARCHAR(85) NOT NULL,
   Relased_year INT NOT NULL,
   Image_url VARCHAR(45) ,

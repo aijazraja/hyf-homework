@@ -25,8 +25,9 @@ primary key(id),
 foreign key (class_id) references class(id)
 );
 -- Create an index on the name column of the student table.
-create index index_name
-on Student(name);
+create index index_student
+on Student(id);
+
 -- Add a new column to the class table named status which can only have the following values: not-started, ongoing,
  -- finished (hint: enumerations).
  alter table class
