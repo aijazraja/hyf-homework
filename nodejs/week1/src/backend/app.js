@@ -19,8 +19,9 @@ the "reviews" property will be an empty array. (watch the GIF below to understan
 structured)
 */
 
-const copiedMeals = meals;
-const mealsWithReviews = copiedMeals.map((meal) => {
+//const copiedMeals = meals;
+
+const mealsWithReviews = meals.map((meal) => {
   meal.reviews = reviews.filter((review) => review.mealId === meal.id);
   return meal;
 });
