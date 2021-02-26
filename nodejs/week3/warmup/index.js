@@ -18,9 +18,9 @@ app.get("/calculator/multiply/", (req, res) =>{
     if(numberOfParameters==2)
          res.send('Multiply is '+(firstNumber*secondNumber)); 
    else if(numberOfParameters==3) 
-         res.send('Multiply is '+(firstNumber*secondNumber)*thirdNumber); 
+         res.send('Multiply is '+ firstNumber*secondNumber*thirdNumber); 
 
-    res.send('Multiply is '+(firstNumber*secondNumber)*thirdNumber);  
+   
     
 }); 
 
@@ -45,7 +45,7 @@ app.post("/calculator/multiply/", (req, res) =>{
 if(numberOfParameters==2)
          res.send('Multiply is '+(firstNumber*secondNumber)); 
 else if(numberOfParameters==3) 
-         res.send('Multiply is '+(firstNumber*secondNumber)*thirdNumber); 
+         res.send('Multiply is '+firstNumber*secondNumber*thirdNumber); 
     
 });
 
@@ -58,3 +58,5 @@ app.post("/calculator/division/", (req, res) =>{
 });
 
 app.listen(3000, () => console.log(`Calculator:listening on port 3000`));
+
+
