@@ -6,3 +6,6 @@ corn
 cucumber
 eggplant
 green pepper
+asparagusasparagus
+cauliflower
+corn
